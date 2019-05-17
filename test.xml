@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="testView">
+    <controller id="font" type="字体" para="'宋体',0,30"></controller>>
+	<controller id="topicColor" type="颜色" para="3,3,227"></controller>
+	<controller id="mfrmTestView" type="窗口" para="'我的一个试验窗口'">
+		<method name="=size" para="400, 300"></method>
+		<method name="=关闭动作" para="=关闭动作.无动作"></method>
+		<method name="=窗体居中" para="#java.awt.Component;null"></method>
+		<method name="setResizable" para="false"></method> 
+	</controller>
+	<controller id="panel" parent="mfrmTestView" type="画板" para="*">
+		<method name="=位置" para="0,0"></method>
+		<method name="=size" para="400, 100"></method>
+		<method name="setBackground" para="#java.awt.Color;0;0;0"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>>
+	<controller id="zhanghao" parent="mfrmTestView" type="标签" 
+			para="'账号'">
+		<method name="=位置" para="100,100"></method>
+		<method name="=size" para="60, 40"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>
+	<controller id="password" parent="mfrmTestView" type="标签" 
+			para="'密码'">
+		<method name="=位置" para="100,100"></method>
+		<method name="=size" para="60, 100"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>
+	<controller id="jzhanghao" parent="mfrmTestView" type="文本框" 
+			para="''">
+		<method name="=size" para="80,20"></method>
+		<method name="=位置" para="150,110"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>
+	<controller id="jpassword" parent="mfrmTestView" type="文本框" 
+			para="''">
+		<method name="=size" para="80,20"></method>
+		<method name="=位置" para="150,143"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>
+	<controller id="button" parent="mfrmTestView" type="按钮" 
+			para="'登陆'">
+		<method name="=size" para="120,20"></method>
+		<method name="=位置" para="110,180"></method>
+		<method name="setVisible" para="true"></method>
+	</controller>
+</view>
